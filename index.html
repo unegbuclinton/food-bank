@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Bank</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  </head>
+  <body>
+    <section id="hero" class="hero layout">
+      <nav>
+        <img src="./images/logo.png" alt="logo" />
+        <div class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#community">Feeding the Community </a>
+          <a href="#donation">Donation Packages</a>
+          <a href="#empowering">Empowering Others</a>
+        </div>
+        <button class="donate-btn btn">DONATE</button>
+
+        <div id="hamburger" class="hamburger ">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div id="menu" class="nav-menu ">
+            <ul>
+                <a class="menu-link" href="#hero">Home</a>
+                <a class="menu-link" href="#community">Feeding the Community </a>
+                <a class="menu-link" href="#donation">Donation Packages</a>
+                <a class="menu-link" href="#donation">Donation Packages</a>
+                <a class="menu-link" href="#empowering">Empowering Others</a>
+            </ul>
+   
+            <button class="btn">Donate Now</button>
+           
+          </div>
+      </nav>
+
+      <div class="hero-content">
+        <img src="./images/hero-img.png" alt="" />
+        <div>
+          <h1>Support Our Food Bank</h1>
+          <p>For Just $25, Feed a Family in Need for a Whole Month.</p>
+          <button class="donate-btn btn">DONATE</button>
+        </div>
+      </div>
+     
+    </section>
+    <section id="community" class="community layout">
+      <div class="donate-card">
+        <h1>Donate to DAH’s Food Bank</h1>
+        <div class="card-btns">
+          <button class="btn" data-price="25">$25</button>
+          <button class="btn" data-price="100">$100</button>
+          <button class="btn" data-price="500">$500</button>
+        </div>
+        <input type="number" class="custom-donate" placeholder="Custom Amount" />
+        <button id="custom-btn" class="cta-donation-btn">Donate Now</button>
+      </div>
+
+      <div class="community-mission">
+        <div class="community-info">
+          <h1>Feeding the Community</h1>
+          <p>
+            Dar Al-Hijrah has provided healthy food to those who struggle for
+            years. During the pandemic, when the world shut down, we remained
+            open, and the need quadrupled.
+            <br />
+            <br />
+            Supply issues, rising prices, increased demand...Through it all, we
+            continue to distribute halal meat, fresh produce, bread and hot
+            meals to our community members, regardless of their faith, every
+            week. Show your support today, and help us help families in need.
+          </p>
+          <button class="donate-btn btn">Donate</button>
+        </div>
+        <img src="./images/community-img.png" alt="" />
+      </div>
+    </section>
+    <section id="donation" class="donation-support">      
+        <h1>Donate to Support Families in Our Community</h1>
+        <div class="donation-cards">
+            <div class="donation-card">
+                <h1>$25</h1>
+                <p>Feed a Family for a Month </p>
+                <button class="btn" data-price="25">DONATE NOW</button>
+            </div>
+            <div class="donation-card">
+                <h1>$100</h1>
+                <p>Feed a Family for a Month </p>
+                <button class="btn" data-price="100">DONATE NOW</button>
+            </div>
+            <div class="donation-card">
+                <h1>$500</h1>
+                <p>Feed a Family for a Month </p>
+                <button class="btn" data-price="500">DONATE NOW</button>
+            </div>
+            <div class="donation-card">
+                <h1 class="custom">Custom Amount </h1>
+                <button class="btn">DONATE NOW</button>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="empowering" class="empowerment">
+    <div class="header-section"> 
+        <h1>Empowering Others - Drive Thru Food Bank</h1>
+        <button class="btn">DONATE NOW</button>
+    </div>
+
+    <img src="./images/empowerment-img.png" alt="">
+    </section>
+
+    <footer>
+        <div class="footer-img__container">
+            <img src="./images/footer-logo.png" alt="">
+           <div class="social-icons">
+            <a href="https://www.facebook.com/hijrahva/">
+                <img src="./images/facebook.png" alt="">
+            </a>
+            <a href="https://twitter.com/hijrahva"> 
+                <img src="./images/twitter.png" alt="">
+            </a>
+           <a href="https://www.instagram.com/hijrahva/">
+            <img src="./images/instagram.png" alt="">
+           </a>
+            
+           </div>
+        </div>
+        <p class="footer-text">Allright Reserve ©Al- Hijrah</p>
+    </footer>
+
+    <div id="modal" class="modal in-active ">
+        <div class="modal-content" id="modal-content">
+          <div class="modal-header">
+            <p class="modal-header">Make a Donation</p>
+            <img src="./images/cancel.png" alt="" id="modal-cancel" class="header-cancel">
+          </div>
+          <div class="modal-text">Earn a Spiritual reward by Providing Assistance</div>
+          <div class="modal-container">
+            <button class="modal-btn" data-price="25">$25</button>
+            <button class="modal-btn" data-price="100">$100</button>
+            <button class="modal-btn" data-price="500">$500</button>
+          </div>
+          <div class="modal-input">
+            <input type="number" class="donation-value" id="donation-value"></input>
+            <input type="number" class="final-amount" value="5" hidden>
+            <div class="gateway-container">
+              
+                <div id="card-container" class="text-center">
+                  <button class="donation-pay__btn">Donate</button>
+                </div>
+            </div>
+            
+          </div>
+         <p class="modal-footer__text">Thank you for your donation</p>
+        </div>
+    <script src="index.js"></script>
+  </body>
+</html>
